@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Connexion utilisateur</title>
+</head>
+<body>
+    <header>
+        <h1>Connexion à votre compte</h1>
+        <p>Veuillez entrer vos identifiants pour accéder à votre espace personnel.</p>
+    </header>
+    
+    <main>
+        <form action="traitement-connexion.php" method="post">
+            <fieldset>
+                <legend>Informations de connexion</legend>
+                
+                <div>
+                    <label for="username">Nom d'utilisateur ou email :</label><br>
+                    <input type="text" id="username" name="username" required placeholder="Entrez votre nom d'utilisateur ou email">
+                </div>
+                
+                <br>
+                
+                <div>
+                    <label for="password">Mot de passe :</label><br>
+                    <input type="password" id="password" name="password" required placeholder="Entrez votre mot de passe">
+                </div>
+                
+                <br>
+                
+                <div>
+                    <input type="checkbox" id="remember" name="remember">
+                    <label for="remember">Se souvenir de moi</label>
+                </div>
+            </fieldset>
+            
+            <br>
+            
+            <div>
+                <button type="submit">Se connecter</button>
+                <button type="reset">Effacer</button>
+            </div>
+            
+            <br>
+            
+            <div>
+                <p>
+                    <a href="mot-de-passe-oublie.html">Mot de passe oublié ?</a> | 
+                    <a href="creer-compte.html">Créer un compte</a>
+                </p>
+            </div>
+        </form>
+        
+        <section>
+            <h2>Informations importantes</h2>
+            <details>
+                <summary>Conseils de sécurité</summary>
+                <ul>
+                    <li>Ne partagez jamais vos identifiants avec qui que ce soit</li>
+                    <li>Assurez-vous de vous déconnecter après chaque session</li>
+                    <li>Utilisez un mot de passe fort et unique</li>
+                </ul>
+            </details>
+            
+            <details>
+                <summary>Problèmes de connexion courants</summary>
+                <ul>
+                    <li>Vérifiez que le verrouillage majuscules est désactivé</li>
+                    <li>Assurez-vous que votre compte n'est pas bloqué</li>
+                    <li>Contactez l'administrateur si le problème persiste</li>
+                </ul>
+            </details>
+        </section>
+    </main>
+    
+    <footer>
+        <hr>
+        <p>&copy; c'est moi - Tous droits réservés. | <a href="politique-confidentialite.html">Politique de confidentialité</a></p>
+    </footer>
+</body>
+</html>
